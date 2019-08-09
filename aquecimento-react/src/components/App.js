@@ -16,16 +16,17 @@ import Contato from './Contato';
 class App extends Component {
   render() {
     return (
-      
-      <BrowserRouter>
-        <Banner/>
 
-        <Switch>
-          <Route path="/inicio" component={Inicio}/>
-          <Route path="/sobre" component={Sobre}/>
-          <Route path="/contato" component={Contato}/>
-          <Redirect to="/inicio"/>
-        </Switch>
+      <BrowserRouter>
+        <Banner />
+        <div className="conteudo">
+          <Switch>
+            <Route path="/inicio" component={Inicio} />
+            <Route path="/sobre" component={Sobre} />
+            <Route path="/contato" component={Contato} />
+            <Redirect to="/inicio" />
+          </Switch>
+        </div>
       </BrowserRouter>
     );
   }
