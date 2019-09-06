@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
-import Menu from '../menu/Menu';
+import Menu from '../../components/menu/Menu';
 import icone from '../../img/paginaAnterior.png';
 import ListaService from '../../services/ListaService';
+import ROTAS from '../../constants/rotas';
 
 export default class CriarLista extends Component {
     state = {
@@ -13,7 +14,7 @@ export default class CriarLista extends Component {
         const nome = event.target.value;
         this.setState({ nome });
     }
-    salvar = (event)=>{
+    salvar = (event) => {
         /**
          * Previne o comportamento padrão
          * do formulário, que é recarregar a página.
@@ -27,7 +28,7 @@ export default class CriarLista extends Component {
          * Faz o encaminhamento para a
          * página inicial doapp.
          */
-        this.props.history.push('/');
+        this.props.history.push(ROTAS.INICIO);
     }
 
     render() {
