@@ -28,7 +28,8 @@ export default class CriarLista extends Component {
          * Faz o encaminhamento para a
          * página inicial doapp.
          */
-        this.props.history.push(ROTAS.INICIO);
+        this.props.history.push(ROTAS.INICIO
+            );
     }
 
     render() {

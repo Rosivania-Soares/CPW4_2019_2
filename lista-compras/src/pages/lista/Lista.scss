@@ -20,11 +20,15 @@
         .item{
             text-align: center;
             font-family: $fonte-principal;
-            color:$cor-titulo;
+            font-size: 110%;
             background-color: $cor-fundo-item1;
             padding: 25px;
             border-radius: 5px;
             margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:$cor-titulo;
         }
     }
     #areaBotao{
