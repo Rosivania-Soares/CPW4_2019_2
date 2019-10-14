@@ -1,0 +1,86 @@
+@import '../../Cores';
+@import '../../fonts/Fontes';
+
+.conteiner {
+    padding: 0px 10px;
+
+    h2 {
+        color: $cor-titulo;
+        font-family: $fonte-principal;
+        padding-left: 5px;
+    }
+
+    #mensagemNenhumaLista {
+        color: $cor-titulo;
+        font-size: 110%;
+        font-family: $fonte-principal;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #listagem {
+        margin: 5px;
+
+        .item {
+            text-align: center;
+            font-family: $fonte-principal;
+            font-size: 110%;
+            background-color: rgba(4, 38, 83, 0.863);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgba(245, 245, 245, 0.931);
+        }
+    }
+
+    #areaBotao {
+        margin: 5px;
+
+        #botaoNovaLista {
+            padding: 15px 20px 15px 15px;
+            background-color: $cor-menu;
+            border-radius: 50%;
+            float: right;
+
+            img {
+                width: 40px;
+            }
+        }
+    }
+}
+
+#formNovaLista {
+    padding: 10px;
+
+    input {
+        display: block;
+        margin: auto;
+
+        &[type=text] {
+            width: 80%;
+            height: 35px;
+            font-size: 100%;
+            border: 1px solid $cor-menu;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: $fonte-principal;
+            padding: 5px 10px;
+        }
+
+        &[type=submit] {
+            width: 40%;
+            padding: 15px;
+            background-color: $cor-menu;
+            color: white;
+            border-radius: 7px;
+            font-size: 120%;
+            font-family: $fonte-principal;
+        }
+    }
+
+
+
+}
